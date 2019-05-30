@@ -6,7 +6,7 @@ classdef Robotarium < ARobotarium
     
     properties (Constant, GetAccess = public)
        % This should probably be set through environment variables.
-       config = jsondecode(char(fread(fopen('/home/verifier/config/config.json', 'r'), inf)'))
+       config = jsondecode(char(fread(fopen(getenv('ROBOTARIUM_VERIFIER_CONFIG'), 'r'), inf)'))
     end
 
     properties (GetAccess = public, SetAccess = private)
