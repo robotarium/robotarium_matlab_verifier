@@ -45,6 +45,7 @@ classdef Robotarium < ARobotarium
             
             parser.addParameter('NumberOfRobots', -1);
             parser.addParameter('ShowFigure', true);
+            parser.addParameter('FigureHandle', []);
             parser.addParameter('InitialConditions', []);
                         
             parse(parser, varargin{:})                                     
