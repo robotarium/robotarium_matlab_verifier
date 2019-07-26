@@ -52,7 +52,7 @@ classdef Robotarium < ARobotarium
             
             % The input will be validated by ARobotarium
             this = this@ARobotarium(parser.Results.NumberOfRobots, ...
-                parser.Results.ShowFigure);
+                parser.Results.ShowFigure, parser.Results.FigureHandle);
             
             if(parser.Results.NumberOfRobots ~= Robotarium.config.num_robots)
                 this.reported_errors('MismatchingNumbers') = sprintf('Expected %i robots but asked for %i', parser.Results.NumberOfRobots, Robotarium.config.num_robots);
