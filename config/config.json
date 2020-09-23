@@ -1,0 +1,7 @@
+{
+    "duration": 60,
+    "num_robots": 10,
+    "output_file": "/home/error_report.json",
+    "robots_outside_boundaries_limit": 100,
+    "robots_too_close_limit": 100
+}
